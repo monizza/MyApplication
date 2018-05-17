@@ -1,0 +1,102 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>
+        Checkoout
+    </title>
+    <link href="CSS/Layout.css" rel="stylesheet"/>
+</head>
+
+<body>
+    <div id="welcomeimage">
+        <img src="images/coffeeheader.jpg" alt="welcome image " />
+    </div>
+    <div id="coffeeofthemonth">
+        <img src="images/cotm.jpg" alt="image for bestproduct" />
+    </div>
+    <section class="coffeedetails">
+        <header class="blockheader">
+            <span>checkout</span>
+        </header>
+        <form id="mainForm" action="#" method="post">
+            <fieldset class="box">
+         <legend> Your Information </legend>
+            <div>
+                <p>
+                    <label class="textlabel" for="firstnameinput"> First Name </label>
+                    <input id="firstnameinput" name="FirstName" type="text" required = "required" placeholder="First Name" autofocus="autofocus" class="textinput" maxlength="30" />
+                    
+                </p>
+
+                <p><label class="textlabel" for="lastnameinput"> Last Name</label>
+                    <input id="lastnameinput" name="LastName " type="text" required = "required" placeholder="Last Name" class="textinput" size="10" maxlength="50" />
+
+                </p>
+                <p> 
+                    <label class="textlabel" for="emailInput"> Email </label>
+                    <input id = "emailInput" name="Email" type="email"
+                           required = "required" placeholder="Email" class="textinput"/>
+                </p>
+                <p>
+                    <label class="textlabel" for="streetInput"> Street </label>
+                    <input id="streetInput" name="street" type="text"
+                           required = "required" placeholder="Street address" class="textinput"/>    
+                </p>
+                <p>
+                    <label class="textlable" for="numberInput"> Number </label>
+                    <input id="numberInput" name="Number" type="text" class="textinput"/>
+                    
+                </p>
+                <p>
+                    <label class="textlabel" for="zipInput" > ZIP code </label>
+                    <input id="zipInput" name="Zip" type="text" required = "required"  placeholder="Zip code" class="textinput"/>
+                    
+                    
+                </p>
+                <p>
+                   <label class="textlabel" for="cityInput"> City </label>
+                    <input id="cityInput" name="city" type="text" required = "required"  class="textinput"/>
+                    
+                </p>
+                <p>
+                    <label class="textlabel" for="countryInput"> Country </label>
+                    <input id="countryInput" name= "country" type="text" required = "required" class="textinput" pattern = "[a-za-a]{3}"/>
+                </p>
+            <p>
+                    <label class="textlabel" for="phoneInput"> Phone number</label>
+                    <input id="phoneInput" name= "Phone" type="text" required = "required" class="textinput"/>
+                </p>
+                <p>
+                    <label class="textlabel" for="blogInput"> Blog </label>
+                    <input id="blogInput" name="blog" type="url" class="textinput"/>
+                </p>
+                <p>
+                    <label class="textlabel" for="remarkInput" > Remark </label>
+                    <input id="remarkInput" name="Remark" type="text" class="textinput"/>
+                </p>
+            </div>
+            </fieldset>
+            <fieldset class="box">
+                <legend> Your Order </legend>
+                <p>
+                <label class="textlabel" for="deliveryDateInput"> Requested delivery date </label>
+                <input id="deliveryDateInput" name="BirthDate" class="textinput" type="date"/>
+                    </p>
+                <p>
+                    <label class="textlabel" for="colorInput">Wrapping paper order </label>
+                    <input id="colorInput" name="Color" type="color" class="textiput"/>
+                </p>
+                <p>
+                    <label class="textlabel" for="bowInput" > How many bows on the packages</label>
+                    <input id="bowInput" placeholder=" Enter value between 1 and 10" name="Bows" type="number" class="textinput" min = "1" max="10"/>
+                </p>
+            </fieldset>
+            <button type="submit"> Place Order</button>
+           
+        </form>
+    </section>
+
+</body>
+
+</html>
