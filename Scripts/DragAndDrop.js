@@ -68,9 +68,9 @@ function addDnDHandlers() { // eslint-disable-line no-unused-vars
 		// getting hold of the data-price attribute and stored in price avriable 
 		var price = item.getAttribute("data-price");
 		// creating new coffee instance passing id and price
-		var Coffee = new Coffee (id , price);
+		var coffee = new Coffee (id , price);
 		//calling add coffee function this is define in updateshoppingcarUI
-		CurrentCart.addCoffee(id , price);
+		CurrentCart.addCoffee(coffee);
 		updateShoppingCartUI();
 		
 }
